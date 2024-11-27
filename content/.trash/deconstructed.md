@@ -1,0 +1,28 @@
+---
+
+excalidraw-plugin: parsed
+tags: [excalidraw]
+
+---
+==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
+
+# Excalidraw Data
+## Text Elements
+
+## Embedded Files
+987d95454bb48edea2229221e68fbacba08d0653: [[99. attachments/svm_geometric_margin.md]]
+
+%%
+## Drawing
+```compressed-json
+N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQA2bR4aOiCEfQQOKGZuAG1wMFAwYogSbggjACkAVWJ6CgAWAGUU4shYRHLCfWikfhLMbmcARmGABm1hhviGgFYeedmG4dmA
+
+Dgb+yBghgGZ4gHZtebnh/YBOM+WLmc2IChJ1bh39sdvJBEJlaSfh1dvrZTBbivAoCKCkNgAawQAGE2Pg2KRygBiMZo9GtEqaXDYSHKCFCDjEOEIpEScHWZhwXCBLKYyAAM0I+HwTVgQIkkhxGkC9IgzHBUIQAHUHpJuMNbgKIdC2TAOehBB4+QSvhxwjk0JLQRA2NTsGptlq0bcCUT1cxNagOEIWVKEAhiNwzvsdjtbowWOwuGgNjrPaxOAA5Thi
+
+J4NHirM5jeJjfa3IRwYi4KCOiWuuM8HarYZnWY7P1tUrMAAiaVTTrQDIIYVu+OEcAAksQrbkALq3TTCIkAUWCGSyrY7OqIHEh3BtdpHbFxaarNYQtyZwWb5TOq32xDzcwamk0DVWjpCPBPZxPwwQ8VWDOx2GxY1WxBj+b5zHc4lQ+TaYG13+GoOHItCCJLByk0MYADUIAKABfcBAIgXA4DgNkUw/Ip2neDJyiIL4oExBhCAQCgACEcTxM1iXhREU
+
+QAMXohiCOwERaSgRtU30NkZVhaiyXQVF0TRJiWMyNiOLI3F60JKjSXKCkOCpGlROE0hWPY9JaOZVl2Q/KRuREPoCggZjVNE9TOMFaFRWIR4tX6YyRKycyuKFOUFX5eEynsky1I4gAlYQ1Q1CVvMcsT0gAeX1Q0JRNIyfLMjjaM4KBaNwfRmSNVBf0gBKnKSlKmkIIwPx4EESjy8L9AAFSwKAAEFcJ9dBggZfDQtM/L0lQ0gGtUtgKHeXBK2tW18A
+
+63z0h7Il6v6waQhGxC5pUyb9AC6SLStfkuVIOACPxEgipK4FwBg/gIGXcJuGAOCYKAA=
+```
+%%
