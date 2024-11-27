@@ -5,13 +5,7 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [
-    Component.Navbar({
-      links:{
-        Home: "/",
-        Tags: "/tags",
-        
-      },
-    }),
+    // ...existing code...
   ],
   afterBody: [],
   footer: Component.Footer({
