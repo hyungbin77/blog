@@ -23,26 +23,7 @@
   margin-right: 0;
   flex-direction: column;
 
-  @media all and ($mobile) {
-    margin-left: inherit;
-    margin-right: inherit;
-  }
-
-  @media all and not ($desktop) {
-    position: initial;
-    height: unset;
-    width: 100%;
-    flex-direction: row;
-    padding: 0;
-
-    & > * {
-      flex: 1;
-    }
-
-    & > .toc {
-      display: none;
-    }
-  }
+  // 미디어 쿼리 제거
 
   // 컴포넌트 간 마진 추가
   & > .table-of-contents,
