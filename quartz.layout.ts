@@ -6,7 +6,7 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [
     Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
+    Component.Spacer(), // Spacer 추가
     Component.Search(),
     Component.Darkmode(),
     // ...existing code...
@@ -47,11 +47,11 @@ export const defaultContentPageLayout: PageLayout = {
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
   left: [
-    Component.PageTitle(),
+    //Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    Component.Search(),
-    Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
+    //Component.Search(),
+    //Component.Darkmode(),
+    //Component.DesktopOnly(Component.Explorer()),
   ],
   right: [],
 }
