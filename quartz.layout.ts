@@ -12,15 +12,8 @@ export const sharedPageComponents: SharedLayout = {
     // ...existing code...
   ],
   afterBody: [
-    {
-      type: 'div',
-      layout: 'flex',
-      direction: 'row',
-      children: [
-        Component.Graph(),
-        Component.Backlinks(),
-      ],
-    },
+      //Component.Graph(),
+      //Component.Backlinks(),
   ],
   footer: Component.Footer({
     links: {
@@ -46,9 +39,9 @@ export const defaultContentPageLayout: PageLayout = {
     //Component.DesktopOnly(Component.Explorer()),
   ],
   right: [
-    //Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
-    //Component.Backlinks(),
+    Component.Backlinks(),
+    Component.Graph(),
   ],
 
 }
