@@ -18,11 +18,38 @@
 }
 
 // Add margin to right components
-aside.right {
-  & > div {
-    margin-top: 10rem;  // 원하는 값으로 조정
+.sidebar.right {
+  grid-area: grid-sidebar-right;
+  margin-right: 0;
+  flex-direction: column;
+
+  @media all and ($mobile) {
+    margin-left: inherit;
+    margin-right: inherit;
+  }
+
+  @media all and not ($desktop) {
+    position: initial;
+    height: unset;
+    width: 100%;
+    flex-direction: row;
+    padding: 0;
+
+    & > * {
+      flex: 1;
+    }
+
+    & > .toc {
+      display: none;
+    }
+  }
+
+  // 컴포넌트 간 마진 추가
+  & > .table-of-contents,
+  & > .backlinks,
+  & > .graph {
+    margin-top: 5rem; // 원하는 값으로 조정
   }
 }
-
 // put your custom CSS here!
 
