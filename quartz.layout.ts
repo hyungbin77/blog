@@ -11,7 +11,12 @@ export const sharedPageComponents: SharedLayout = {
     Component.Darkmode(),
     // ...existing code...
   ],
-  afterBody: [],
+  afterBody: [
+    Component.Container([
+      Component.Graph(),
+      Component.Backlinks(),
+    ], { class: "afterbody-container" }), // 컨테이너 클래스 추가
+  ],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/hyungbin77/blog",
@@ -36,9 +41,9 @@ export const defaultContentPageLayout: PageLayout = {
     //Component.DesktopOnly(Component.Explorer()),
   ],
   right: [
-    Component.Graph(),
+    //Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
+    //Component.Backlinks(),
   ],
 
 }
