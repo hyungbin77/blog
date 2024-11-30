@@ -17,4 +17,11 @@
   gap: 1rem;
 }
 
+.component-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem; // 필요한 경우 간격 추가
+}
+
 // put your custom CSS here!
+

@@ -12,8 +12,12 @@ export const sharedPageComponents: SharedLayout = {
     // ...existing code...
   ],
   afterBody: [
+    React.createElement(
+      'div',
+      { className: 'component-container' },
       Component.Graph(),
-      Component.Backlinks(),
+      Component.Backlinks()
+    ),
   ],
   footer: Component.Footer({
     links: {
@@ -21,7 +25,7 @@ export const sharedPageComponents: SharedLayout = {
       "Discord Community": "https://discord.gg/cRFFHYye7t",
     },
   }),
-}
+};
 
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
