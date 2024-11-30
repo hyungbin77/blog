@@ -17,7 +17,12 @@
   gap: 1rem;
 }
 
-
+// Add margin to right components
+aside.right {
+  & > div {
+    margin-top: 4rem;  // Adjust this value to move components lower
+  }
+}
 
 // put your custom CSS here!
 
