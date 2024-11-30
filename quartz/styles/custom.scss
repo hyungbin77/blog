@@ -16,4 +16,21 @@
   display: flex;
   gap: 1rem;
 }
+
+// afterBody 컨테이너 스타일링
+.afterbody-container {
+  display: flex;
+  justify-content: space-between; // 좌측과 우측 끝 정렬
+  align-items: center; // 수직 정렬
+  padding: 1rem 0; // 상하 패딩 추가 (필요 시 조정)
+  
+  // 반응형 디자인을 위한 미디어 쿼리 (필요 시)
+  @media #{ $tablet } {
+    padding: 1.5rem 0;
+  }
+
+  @media #{ $desktop } {
+    padding: 2rem 0;
+  }
+}
 // put your custom CSS here!
