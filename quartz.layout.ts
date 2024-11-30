@@ -13,7 +13,7 @@ export const sharedPageComponents: SharedLayout = {
   ],
   afterBody: [
     {
-      type: 'container',
+      type: 'div',
       layout: 'flex',
       direction: 'row',
       children: [
