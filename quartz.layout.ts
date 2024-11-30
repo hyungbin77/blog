@@ -12,10 +12,8 @@ export const sharedPageComponents: SharedLayout = {
     // ...existing code...
   ],
   afterBody: [
-    Component.Container([
       Component.Graph(),
       Component.Backlinks(),
-    ], { class: "afterbody-container" }), // 컨테이너 클래스 추가
   ],
   footer: Component.Footer({
     links: {
