@@ -1,0 +1,47 @@
+{
+  "runSettings": {
+    "temperature": 1.3,
+    "model": "models/gemini-exp-1206",
+    "candidateCount": 1,
+    "topP": 0.95,
+    "topK": 64,
+    "maxOutputTokens": 8192,
+    "safetySettings": [{
+      "category": "HARM_CATEGORY_HARASSMENT",
+      "threshold": "BLOCK_NONE"
+    }, {
+      "category": "HARM_CATEGORY_HATE_SPEECH",
+      "threshold": "BLOCK_NONE"
+    }, {
+      "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+      "threshold": "BLOCK_NONE"
+    }, {
+      "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+      "threshold": "BLOCK_NONE"
+    }, {
+      "category": "HARM_CATEGORY_CIVIC_INTEGRITY",
+      "threshold": "BLOCK_LOW_AND_ABOVE"
+    }],
+    "responseMimeType": "text/plain",
+    "enableCodeExecution": false,
+    "enableEnhancedCivicAnswers": true,
+    "enableSearchAsATool": false
+  },
+  "systemInstruction": {
+  },
+  "chunkedPrompt": {
+    "chunks": [{
+      "text": "latex 를 쓸 때 \n \\[x \u003d 2y + 1 \n      \u003d  dasdsa \\]\n처럼 \n\u003d  \n\u003d 간의 위치를 똑같이 하려면 어케 해야해? ",
+      "role": "user",
+      "tokenCount": 50
+    }, {
+      "text": "LaTeX에서 수식에서 등호(\u003d)의 위치를 정렬하려면 `aligned` 환경을 사용하는 것이 가장 좋습니다. `aligned` 환경은 여러 줄의 수식을 등호나 기타 연산자를 기준으로 정렬할 수 있도록 해줍니다.\n\n다음은 `aligned` 환경을 사용하여 등호를 정렬하는 예입니다.\n\n```latex\n\\begin{aligned}\nx \u0026\u003d 2y + 1 \\\\\n  \u0026\u003d 2(3) + 1 \\\\\n  \u0026\u003d 6 + 1 \\\\\n  \u0026\u003d 7\n\\end{aligned}\n```\n\n이 코드는 다음과 같이 렌더링됩니다.\n\n```\nx \u003d 2y + 1\n  \u003d 2(3) + 1\n  \u003d 6 + 1\n  \u003d 7\n```\n\n`aligned` 환경은 다음과 같이 작동합니다.\n\n1. `\\begin{aligned}`와 `\\end{aligned}`로 정렬하려는 수식 블록을 감쌉니다.\n2. 각 줄에서 정렬 기준으로 삼을 연산자 (이 경우 `\u003d`) 앞에 앰퍼샌드(`\u0026`)를 넣습니다.\n3. 줄바꿈은 `\\\\`로 표시합니다.\n\n`aligned` 환경은 `equation`, `gather`, `multline` 등 다른 수식 환경 안에서 사용할 수 있습니다. 예를 들어 `equation` 환경 안에서 `aligned`를 사용하면 번호가 매겨진 수식에서 등호를 정렬할 수 있습니다.\n\n```latex\n\\begin{equation}\n\\begin{aligned}\nx \u0026\u003d 2y + 1 \\\\\n  \u0026\u003d 2(3) + 1 \\\\\n  \u0026\u003d 6 + 1 \\\\\n  \u0026\u003d 7\n\\end{aligned}\n\\end{equation}\n```\n\n이 코드는 등호가 정렬된 번호가 매겨진 수식을 생성합니다.\n\n`dasdsa`는 `aligned` 환경에서 등호 앞이나 뒤에 추가하여 그 줄이 등호를 기준으로 어떻게 정렬되어야 하는지 지정할 수 있습니다.\n\n**참고:**\n\n* `aligned` 환경은 `amsmath` 패키지에서 제공되므로 문서의 프리앰블에 `\\usepackage{amsmath}`를 추가해야 합니다.\n* `aligned` 환경 외에도 `align` 환경도 사용할 수 있지만, `align` 환경은 전체 수식 블록에 번호를 매기는 반면 `aligned` 환경은 하위 수식 블록에만 번호를 매기거나 번호를 매기지 않을 수 있습니다.\n\n이 설명이 LaTeX에서 수식의 등호를 정렬하는 데 도움이 되었기를 바랍니다.\n",
+      "role": "model",
+      "finishReason": "STOP"
+    }],
+    "pendingInputs": [{
+      "text": "",
+      "role": "user"
+    }]
+  }
+}

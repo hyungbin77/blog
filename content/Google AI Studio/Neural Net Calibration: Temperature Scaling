@@ -1,0 +1,53 @@
+{
+  "runSettings": {
+    "temperature": 1.0,
+    "model": "models/gemini-exp-1206",
+    "candidateCount": 1,
+    "topP": 0.95,
+    "topK": 64,
+    "maxOutputTokens": 8192,
+    "safetySettings": [{
+      "category": "HARM_CATEGORY_HARASSMENT",
+      "threshold": "BLOCK_NONE"
+    }, {
+      "category": "HARM_CATEGORY_HATE_SPEECH",
+      "threshold": "BLOCK_NONE"
+    }, {
+      "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+      "threshold": "BLOCK_NONE"
+    }, {
+      "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+      "threshold": "BLOCK_NONE"
+    }, {
+      "category": "HARM_CATEGORY_CIVIC_INTEGRITY",
+      "threshold": "BLOCK_LOW_AND_ABOVE"
+    }],
+    "responseMimeType": "text/plain",
+    "enableCodeExecution": false,
+    "enableEnhancedCivicAnswers": true,
+    "enableSearchAsATool": false
+  },
+  "systemInstruction": {
+  },
+  "chunkedPrompt": {
+    "chunks": [{
+      "driveDocument": {
+        "id": "1NxSm-lyoO24naeLko0WUkaj2Tke0X29C"
+      },
+      "role": "user",
+      "tokenCount": 22729
+    }, {
+      "text": "논문 자세히 설명 ",
+      "role": "user",
+      "tokenCount": 8
+    }, {
+      "text": "이 논문은 \"On Calibration of Modern Neural Networks\"라는 제목으로, 최신 딥러닝 모델, 특히 합성곱 신경망(CNN)의 출력 확률(confidence)이 실제 정확도와 얼마나 잘 일치하는지(calibration)를 분석하고, 이를 개선하기 위한 방법들을 제시합니다.\n\n**1. 문제 제기: 딥러닝 모델의 출력 확률, 믿을 수 있을까?**\n\n* 딥러닝 모델은 이미지 분류, 객체 탐지, 자연어 처리 등 다양한 분야에서 뛰어난 성능을 보이지만, **출력하는 확률 값이 실제 정확도를 제대로 반영하지 못하는 문제**가 있습니다.\n* 예를 들어, 모델이 어떤 이미지를 90% 확률로 \"개\"라고 예측했지만, 실제 \"개\"일 확률은 70%에 불과할 수 있습니다. 이러한 **miscalibration**은 자율 주행, 의료 진단과 같이 높은 신뢰도가 요구되는 분야에서 심각한 문제를 야기할 수 있습니다.\n* 과거에는 신경망 모델의 출력 확률이 비교적 잘 보정(calibration)되었지만, 최신 모델들은 **깊이(depth), 너비(width), 배치 정규화(Batch Normalization), 가중치 감소(weight decay)** 등 여러 요인으로 인해 보정이 잘 되지 않는 경향을 보입니다.\n\n**2. 핵심 발견: 깊고 넓은 네트워크, 배치 정규화, 낮은 가중치 감소 → miscalibration 심화**\n\n* **모델 용량(Model capacity):**\n    * 깊고 넓은 네트워크는 일반적으로 더 높은 정확도를 보이지만, **과적합(overfitting)으로 인해 출력 확률이 과도하게 높아지는 경향**이 있습니다.\n    * 즉, 모델이 훈련 데이터에 지나치게 맞춰져 일반화 성능이 떨어지고, 이는 출력 확률의 신뢰도 저하로 이어집니다.\n* **배치 정규화(Batch Normalization):**\n    * 훈련 속도를 높이고 성능을 향상시키는 효과적인 기법이지만, **출력 확률의 보정에는 부정적인 영향**을 미치는 것으로 나타났습니다.\n    * 배치 정규화는 각 계층의 입력을 정규화하여 훈련을 안정화하지만, 이 과정에서 출력 확률의 분포가 왜곡될 수 있습니다.\n* **가중치 감소(Weight decay):**\n    * 과거에는 과적합을 방지하기 위해 널리 사용되었지만, 최근에는 배치 정규화 등의 기법에 밀려 사용 빈도가 줄었습니다.\n    * **낮은 가중치 감소는 모델의 복잡도를 제어하지 못하여 과적합을 심화**시키고, 이는 miscalibration으로 이어질 수 있습니다.\n* **NLL overfitting:**\n    * Negative log likelihood (NLL) 손실함수를 사용하는 딥러닝 모델에서 NLL은 계속 감소하지만 정확도는 더 이상 향상되지 않는 현상입니다.\n    * 이는 모델이 여전히 훈련 데이터에 과적합되고 있음을 의미하며, 출력 확률이 과도하게 높아지는 원인이 됩니다.\n\n**3. 해결책 제시: Temperature Scaling**\n\n* 논문은 **Temperature Scaling**이라는 간단하고 효과적인 보정 방법을 제안합니다.\n* Temperature Scaling은 **모델의 출력 로짓(logit)을 온도(temperature)라고 불리는 단일 매개변수 T로 나누어 softmax 함수에 입력**하는 방식입니다.\n* **T \u003e 1** 이면 출력 확률 분포가 **\"부드러워져\"(softmax output entropy 증가)** 과도한 확신(overconfidence)을 줄이고, **T \u003c 1** 이면 **\"뾰족해져\"(softmax output entropy 감소)**, 낮은 확신(underconfidence)을 높입니다.\n* **T \u003d 1** 이면 원래의 softmax 출력을 유지합니다.\n* 적절한 T 값은 검증 데이터셋(validation set)을 사용하여 NLL을 최소화하도록 학습합니다.\n\n**4. 실험 결과: Temperature Scaling의 효과**\n\n* 다양한 데이터셋(CIFAR-10/100, ImageNet, SVHN 등)과 모델(ResNet, DenseNet, LeNet 등)에 대한 실험을 통해 Temperature Scaling의 효과를 검증합니다.\n* Temperature Scaling은 **다른 보정 방법(Histogram Binning, Isotonic Regression, Bayesian Binning into Quantiles, Vector Scaling, Matrix Scaling)들에 비해 우수한 성능**을 보였습니다.\n* 특히, **단일 매개변수 T**만을 사용함에도 불구하고, **여러 매개변수를 사용하는 Vector/Matrix Scaling보다 더 나은 보정 성능**을 보였습니다. 이는 딥러닝 모델의 miscalibration이 **저차원(low dimensional) 문제**임을 시사합니다.\n* Temperature Scaling은 **모델의 정확도(accuracy)에는 영향을 주지 않으면서 보정 성능만 개선**합니다.\n\n**5. 추가 분석: Reliability Diagram**\n\n* **Reliability Diagram**을 통해 보정 성능을 시각적으로 분석합니다.\n* Reliability Diagram은 **예측된 확률 구간별 실제 정확도를 나타내는 그래프**입니다. 완벽하게 보정된 모델은 대각선(y\u003dx) 형태를 보입니다.\n* Temperature Scaling 적용 전/후 Reliability Diagram을 비교하여 보정 효과를 확인합니다.\n\n**6. 결론: Temperature Scaling - 딥러닝 모델 보정을 위한 간편하고 효과적인 방법**\n\n* Temperature Scaling은 **구현이 간단**하고 **계산량이 적으며**, **다양한 모델과 데이터셋에 적용 가능**합니다.\n* **딥러닝 모델의 출력 확률을 신뢰할 수 있게 만들어**, 자율 주행, 의료 진단 등 **안전과 신뢰도가 중요한 분야에 딥러닝을 적용하는 데 기여**할 것으로 기대됩니다.\n\n**7. 추가 정보**\n\n* **S1. Further Information on Calibration Metrics:** ECE와 miscalibration 정의 간의 관계, Riemann-Stieltjes integral 사용 설명.\n* **S2. Further Information on Temperature Scaling:** Entropy maximization principle을 이용한 Temperature Scaling 유도, Claim 1 증명, NLL과 entropy 간의 관계 시각화.\n* **S3. Additional Tables:** MCE, test error, NLL 결과 표.\n* **S4. Additional Reliability Diagrams:** CIFAR-10, SST 데이터셋에 대한 Reliability Diagram.\n\n**핵심 용어**\n\n* **Calibration:** 모델의 출력 확률이 실제 정확도와 얼마나 잘 일치하는지 나타내는 척도.\n* **Miscalibration:** 모델의 출력 확률이 실제 정확도를 제대로 반영하지 못하는 현상.\n* **Temperature Scaling:** 딥러닝 모델의 출력 로짓을 온도(temperature)라는 단일 매개변수로 나누어 보정하는 방법.\n* **Reliability Diagram:** 예측된 확률 구간별 실제 정확도를 시각적으로 나타내는 그래프.\n* **ECE (Expected Calibration Error):** 보정 오차를 측정하는 지표.\n* **MCE (Maximum Calibration Error):** 최대 보정 오차를 측정하는 지표.\n* **NLL (Negative Log Likelihood):** 딥러닝 모델의 학습에 사용되는 손실 함수.\n* **Overfitting:** 모델이 훈련 데이터에 지나치게 맞춰져 일반화 성능이 떨어지는 현상.\n* **Logit:** Softmax 함수에 입력되는 값.\n* **Softmax:** 딥러닝 모델의 출력값을 확률 분포로 변환하는 함수.\n\n**논문의 강점**\n\n* **문제 정의:** 딥러닝 모델의 miscalibration 문제를 명확하게 정의하고, 그 중요성을 강조합니다.\n* **실험 설계:** 다양한 데이터셋과 모델을 사용하여 Temperature Scaling의 효과를 검증하고, 다른 보정 방법들과 비교 분석합니다.\n* **분석:** Reliability Diagram을 통해 보정 성능을 시각적으로 분석하고, miscalibration의 원인을 심층적으로 탐구합니다.\n* **실용성:** Temperature Scaling은 구현이 간단하고 계산량이 적어 실용적입니다.\n\n**논문의 한계**\n\n* Temperature Scaling이 miscalibration을 완벽하게 해결하지는 못하며, 특히 일부 데이터셋(e.g. Reuters)에서는 효과가 제한적일 수 있습니다.\n* Miscalibration의 근본적인 원인에 대한 완벽한 해답을 제시하지는 못합니다.\n\n**전반적으로, 이 논문은 딥러닝 모델의 miscalibration 문제를 해결하기 위한 간편하고 효과적인 방법인 Temperature Scaling을 제안하고, 그 효과를 실험적으로 검증함으로써 딥러닝의 신뢰도를 높이는 데 기여한 의미 있는 연구입니다.**\n",
+      "role": "model",
+      "finishReason": "STOP"
+    }],
+    "pendingInputs": [{
+      "text": "",
+      "role": "user"
+    }]
+  }
+}
