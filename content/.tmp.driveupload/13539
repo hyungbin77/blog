@@ -1,0 +1,281 @@
+{
+  "main": {
+    "id": "057654979e83eb85",
+    "type": "split",
+    "children": [
+      {
+        "id": "420a92faa3b0f36a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f008abd063ee0b8b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00. inbox/11.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "11"
+            }
+          },
+          {
+            "id": "b2a2419b28593d81",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "4b817ff3fc7d3357",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01. concentrate/DBSCAN.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DBSCAN"
+            }
+          },
+          {
+            "id": "f6bc29521e04c9a3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00. inbox/12.22.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "12.22"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5f566d60edc7d223",
+    "type": "split",
+    "children": [
+      {
+        "id": "6590d28af3d2dbb5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "001bd69d629f725e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "07e152ff4012f937",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "f1548d8e01a4c8ef",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "88a8107ec468ee64",
+    "type": "split",
+    "children": [
+      {
+        "id": "9b3d1be9d0b35759",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c6f1f3422f330086",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "00. inbox/Time series anomaly detection.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Time series anomaly detection의 백링크"
+            }
+          },
+          {
+            "id": "2200133a9463df8d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "05. Excalidraw/zolla man.excalidraw.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "zolla man.excalidraw의 나가는 링크"
+            }
+          },
+          {
+            "id": "facdf7a0985f9cfe",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "cc4aa0e8048e4d49",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "01. concentrate/DBSCAN.md"
+              },
+              "icon": "lucide-list",
+              "title": "DBSCAN 개요"
+            }
+          },
+          {
+            "id": "27e321518ab0d5cf",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "obsidian-kanban:새 보드 만들기": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "4b817ff3fc7d3357",
+  "lastOpenFiles": [
+    "03. tags/clustering & anomaly detection.md",
+    "index.md",
+    "01. concentrate/Spatial and Spatio-temporal Epidemiology.md",
+    "01. concentrate/t-SNE.md",
+    "01. concentrate/PCA(주성분 분석).md",
+    "01. concentrate/LOF(Local Outlier Factor).md",
+    "01. concentrate/DBSCAN.md",
+    "01. concentrate/Causal Inference in Linear Systems.md",
+    "00. inbox/Differentiable Causal Backdoor Discovery.md",
+    "Google AI Studio/Arif 및 MacNeil - 2023 - Applying the structural causal model framework for observational causal inference in ecology.pdf",
+    "Google AI Studio/1706.04599v2.pdf",
+    "Google AI Studio/3.pdf",
+    "Google AI Studio/Neural Net Calibration: Temperature Scaling",
+    "Google AI Studio/1706 (1).04599v2.pdf",
+    "Google AI Studio/Deep Learning Anomaly Detection in Time Series",
+    "00. inbox/11.md",
+    "Google AI Studio/Moment Generating Function Domain",
+    "Google AI Studio/Legendre Transforms of Exponential Distributions",
+    "Google AI Studio/LaTeX 수식 등호 정렬 방법",
+    "Google AI Studio/Chernoff Bound for Large Deviations",
+    "00. inbox/Deep_code.md",
+    "00. inbox/12.22.md",
+    "00. inbox/무제 파일.md",
+    "00. inbox/Time series anomaly detection.md",
+    "00. inbox/JAGS.md",
+    "08. tips/사이트.md",
+    "08. tips/엑스 칼리 드로우.md",
+    "08. tips/all tips.md",
+    "00. inbox/DeepAnT.md",
+    "99. attachments/Pasted image 20241219204907.png",
+    "00. inbox/sad.md",
+    "99. attachments/Pasted image 20241218185019.png",
+    "99. attachments/Pasted image 20241218182447.png",
+    "99. attachments/Pasted image 20241218181228.png",
+    "99. attachments/Pasted image 20241218181016.png",
+    "99. attachments/Pasted image 20241218180753.png",
+    "99. attachments/Pasted image 20241218180005.png",
+    "99. attachments/Pasted image 20241218175020.png",
+    "99. attachments/Pasted image 20241218162848.png",
+    "99. attachments/Pasted image 20241218162825.png",
+    "00. inbox/Variational Bayes.md",
+    "00. inbox/--.md",
+    "00. inbox/사무용품 견적.md",
+    "00. inbox/사무용품 견적...md",
+    "05. Excalidraw/Drawing 2024-12-06 19.24.49.excalidraw.md",
+    "tags.md",
+    "01. concentrate/Untitled.canvas"
+  ]
+}
