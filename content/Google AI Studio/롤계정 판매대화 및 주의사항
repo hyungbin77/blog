@@ -1,0 +1,171 @@
+{
+  "runSettings": {
+    "temperature": 1.0,
+    "model": "models/gemini-2.5-pro-preview-05-06",
+    "topP": 0.95,
+    "topK": 64,
+    "maxOutputTokens": 65536,
+    "safetySettings": [{
+      "category": "HARM_CATEGORY_HARASSMENT",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_HATE_SPEECH",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+      "threshold": "OFF"
+    }],
+    "responseMimeType": "text/plain",
+    "enableCodeExecution": false,
+    "enableSearchAsATool": false,
+    "enableBrowseAsATool": false,
+    "enableAutoFunctionResponse": false
+  },
+  "systemInstruction": {
+  },
+  "chunkedPrompt": {
+    "chunks": [{
+      "driveImage": {
+        "id": "1U_2BSgLGZWIl2PJchb2223_A6TLsHm9j"
+      },
+      "role": "user",
+      "tokenCount": 259
+    }, {
+      "driveImage": {
+        "id": "16nFgOJ0FAb0vfwcj1yQDqV9OfARX9ZmJ"
+      },
+      "role": "user",
+      "tokenCount": 259
+    }, {
+      "driveImage": {
+        "id": "1yt2ukcBCjWLJd_Zi9-XQxWGGJ3wRCSiw"
+      },
+      "role": "user",
+      "tokenCount": 259
+    }, {
+      "driveImage": {
+        "id": "1p8ChtiTfrYPQs_GuKl8xAAZaQlldcT0Q"
+      },
+      "role": "user",
+      "tokenCount": 259
+    }, {
+      "driveImage": {
+        "id": "1gRqNfk4-eoaPwpR8EGF7ETDORWyT1O6t"
+      },
+      "role": "user",
+      "tokenCount": 259
+    }, {
+      "driveImage": {
+        "id": "1se1_xd8XbtwvpsaK3kK07ZaYxxEzs-VQ"
+      },
+      "role": "user",
+      "tokenCount": 259
+    }, {
+      "driveImage": {
+        "id": "1rwq32kARccgYIE2PSEBBi6M8nUPz492s"
+      },
+      "role": "user",
+      "tokenCount": 259
+    }, {
+      "driveImage": {
+        "id": "1c-oBh4SvtGs3F8bx_MfdZR6vHhAOcEKj"
+      },
+      "role": "user",
+      "tokenCount": 259
+    }, {
+      "driveImage": {
+        "id": "1NDMsniSWDaMt8GkPoK9tgXJ9Ypll8v8s"
+      },
+      "role": "user",
+      "tokenCount": 259
+    }, {
+      "driveImage": {
+        "id": "1CqVCeYeF2Vy0wQXrm8JQVO_qMdfPFwEJ"
+      },
+      "role": "user",
+      "tokenCount": 259
+    }, {
+      "driveImage": {
+        "id": "1Zw_bceRRsUSwoEOVddlFaF_oKgHsDWkx"
+      },
+      "role": "user",
+      "tokenCount": 259
+    }, {
+      "driveImage": {
+        "id": "1ijqEYGfTbTNQh626UZmJjtcSxKpM1Q6w"
+      },
+      "role": "user",
+      "tokenCount": 259
+    }, {
+      "driveImage": {
+        "id": "12iT7eAaqDA4z8-IdqCUZtROMOKreApZl"
+      },
+      "role": "user",
+      "tokenCount": 259
+    }, {
+      "driveImage": {
+        "id": "1QwAYuz_0yjFIo8FpC9G5HQKUc39Cah_Q"
+      },
+      "role": "user",
+      "tokenCount": 259
+    }, {
+      "driveImage": {
+        "id": "1iMuL2ENd8t1quFIOEz2Xq_FWNcSjEWg5"
+      },
+      "role": "user",
+      "tokenCount": 259
+    }, {
+      "driveImage": {
+        "id": "1k5X3J9mTn16kRMXrGb6lnrumvrueWXHs"
+      },
+      "role": "user",
+      "tokenCount": 259
+    }, {
+      "driveImage": {
+        "id": "18Nw250S50UTZG4TVcnUzzIRyrdFOb5C0"
+      },
+      "role": "user",
+      "tokenCount": 259
+    }, {
+      "driveImage": {
+        "id": "1JvNm7gTPNyDcRzA28oyiL5A1b54lXpE2"
+      },
+      "role": "user",
+      "tokenCount": 259
+    }, {
+      "driveImage": {
+        "id": "1D5YlJKmZPaC7RGjGEcZA-b2s1bdeMK-T"
+      },
+      "role": "user",
+      "tokenCount": 259
+    }, {
+      "driveImage": {
+        "id": "10o_ajIiQUjHzpgkGsQC9iegLlVsfnP72"
+      },
+      "role": "user",
+      "tokenCount": 259
+    }, {
+      "text": "파랑 말풍선은 3대주 나머진 2대주 글씨 3대주: ~~~\n2대주: ~~~\n형식으로 순서대로 싹다 추출해줘",
+      "role": "user",
+      "tokenCount": 46
+    }, {
+      "text": "**Comprehending the Objective**\n\nI\u0027m now focusing on parsing the screenshot text, aiming to differentiate between \"3대주\" and \"2대주\" messages. The challenge lies in accurately recognizing the blue and grey bubble indicators and sequentially arranging the extracted text. This initial step requires a robust pattern recognition to ensure all messages are captured correctly.\n\n\n**Initiating Text Extraction**\n\nI\u0027ve successfully identified the first five messages from the initial screenshot. I\u0027m now structuring the output as requested, distinguishing between the \"3대주\" and \"2대주\" conversations. My primary focus is accuracy, meticulously transcribing each message to ensure a faithful representation of the conversation flow. This is the first screenshot.\n\n\n**Extracting Message Content**\n\nI\u0027m now methodically extracting messages from the second screenshot. The formatting is consistent, with clear speaker identification. The messages from \"2대주\" and \"3대주\" are readily distinguishable, and I\u0027m ensuring accurate transcription of each message. Image 2 is now under control.\n\n\n**Finalizing Transcription Process**\n\nI\u0027m now completing the final transcription for the remaining messages in image 3 and image 4. I\u0027ve successfully accounted for the image-based message in image 3 and will include it appropriately, noting its content. I\u0027m focusing on ensuring accuracy in the final stage, specifically addressing the price clarification.\n\n\n**Summarizing the Dialogue**\n\nI\u0027m now collating the final messages from the iMessage screenshots. I\u0027ve focused on accuracy, carefully transcribing all conversations, including the crucial details about the ID and the bank details. I\u0027m noting the context of the price discussion in the final images, ensuring the dialogue flows logically. I\u0027ve finished extracting all the required message content and am ready for the final formatting and integration.\n\n\n**Extracting and Refining Details**\n\nNow I\u0027m focusing on ensuring accuracy and flow, paying close attention to the price discrepancies and final details. I\u0027ve successfully extracted all messages and am now organizing them chronologically, ready for the final formatting. I will be incorporating the final messages in sequence.\n\n\n**Extracting the Final Pieces**\n\nNow I\u0027m focusing on parsing and incorporating the final messages, ensuring that they are correctly attributed and flow coherently within the conversation. I am now refining the final details of the dialogue, including the final messages and timestamp data.\n\n\n**Synthesizing Chat Data**\n\nI\u0027ve completed transcribing the entire dialogue from all the screenshots. I\u0027ve accounted for all messages, including the image data, and am confident that all speaker attributions are correct. I\u0027m now ready to focus on formatting the entire dialogue.\n\n\n**Synthesizing Chat Data**\n\nI\u0027ve completed the extraction of all messages from the screenshots. I\u0027ve successfully incorporated the ID card image and handled all other relevant contextual information and clarifications. My focus now is on final formatting to ensure the dialogue is clear and easily readable. I\u0027m ready for the next step.\n\n\n**Extracting the Full Conversation**\n\nI\u0027m now integrating the final messages into the transcript, ensuring a chronological flow. I am incorporating the additional messages and formatting them in the desired style, and double-checking the speaker attributions for accuracy. This will allow the user to easily read the entire discussion without any breaks or missing information.\n\n\n**Organizing Message Sequences**\n\nI\u0027m now fully immersed in transcribing the extensive chat logs. I\u0027m taking extreme care in distinguishing between \"3대주\" and \"2대주\" messages. The dialogue, which is quite lengthy, is being accurately transcribed, ensuring an easily readable format. I\u0027m focusing on preserving the natural conversational flow and formatting each message accurately.\n\n\n**Synthesizing Chat Sequences**\n\nI am now thoroughly reviewing the extensive iMessage exchanges. My focus is on ensuring the accurate transcription of the entire dialogue, carefully identifying each speaker. I\u0027m taking extreme care to incorporate all messages to build a cohesive narrative. The dialogue is now transcribed and I am preparing for the final phase.\n\n\n**Extracting the Full Conversation**\n\nI am now thoroughly reviewing the extensive iMessage exchanges. My focus is on ensuring the accurate transcription of the entire dialogue, carefully identifying each speaker. I\u0027m taking extreme care to incorporate all messages to build a cohesive narrative. The dialogue is now transcribed and I am preparing for the final phase.\n\n\n**Transcription Optimization**\n\nI\u0027m now integrating the final messages into the transcript, ensuring a chronological flow. I am incorporating the additional messages and formatting them in the desired style. The focus is on polishing the overall presentation of the extracted conversation.\n\n\n**Synthesizing Chat Sequences**\n\nI\u0027ve completed my final review of the lengthy iMessage exchanges, including all 17 image sections. I\u0027ve focused on meticulous transcription, carefully distinguishing and incorporating each speaker\u0027s message to build a cohesive, easy-to-read narrative. I am ready to finalize the chat transcript.\n\n\n**Extracting the Full Conversation**\n\nI\u0027m now integrating the final messages into the transcript, ensuring a chronological flow. I have incorporated the additional messages and am formatting them according to the desired style. I\u0027m focusing on ensuring speaker attributions are correct and the dialogue flows logically for the user.\n\n\n**Extracting and Refining Details**\n\nI\u0027m now deeply engrossed in parsing the entirety of the iMessage transcripts. My focus remains unwavering on accuracy, carefully interpreting each message and ensuring accurate speaker attribution. I\u0027m taking extreme care to incorporate all messages to create a coherent dialogue. The chat is now fully transcribed and I am preparing the final edits.\n\n\n**Synthesizing Chat Data**\n\nI\u0027ve completed the full transcription from the series of iMessage screenshots, ensuring I\u0027ve captured every message. I have carefully formatted them in chronological order and identified each speaker clearly. Now, I\u0027m ready to organize the dialogue and prepare for the final formatting.\n\n\n**Extracting and Refining Details**\n\nI\u0027ve completed a thorough transcription of all messages across the provided images. The focus now is refining the flow, double-checking the speaker attributions, and ensuring that all details are included for a seamless read. I\u0027m focusing on the dialogue\u0027s natural flow and ensuring everything is ready for the final, cohesive output.\n\n\n",
+      "role": "model",
+      "tokenCount": 5103,
+      "isThought": true,
+      "thoughtSignatures": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+    }, {
+      "text": "Okay, here\u0027s the conversation extracted and formatted as requested:\n\n2대주: 안녕하세요\n2대주: 롤 계정 판매자예여\n3대주: 안녕하세요\n3대주: 잠시만여\n2대주: 넴\n2대주: 계좌거래로 그냥 바로 진행 괜찮아요 ?\n2대주: 이거 머가 먼지 모르겠어서 넘 복잡해요 .. 😄\n2대주: 제가 2대주구 1대주님은 롤 기사분이세요 기사하시는 겹지인 분들도 저랑 다 아는 사이라 연락은 지금도 잘됩니당 🙇🏻‍♀️\n2대주: 계정 문제 생기지않게 대리는 맡기시면 안되시고 프로그램 사용하시면 다른 계정도 정지를 당해서 사용 유의해주셔요\n2대주: 언제 진행 가능하세요 ?\n3대주: 20분에 가능할까요\n2대주: 넴 계좌거래로 바로 진행하는 게 더 편할 거 같아요 20분에 연락주세요 . !\n2대주: 제가 친창을 정리를 못해서 괜찮으실까요?\n3대주: 네네\n2대주: 이제 구매하시면 3대주님이 되시는 건데\n2대주: 1대주님이랑 연락한 거 보여드릴게요\n3대주: 비활 케어 가능하신거죠 ??\n2대주: 넴 비활케어는 가능합니다\n3대주: 회수 및 비활 케어 (2일 내) 불가 시 전액 환불\n3대주: 신분증 뒤 가려서 보내주시면 됩니다 계좌랑 같이\n3대주: 바로 입금 할게여\n2대주: [이미지: 주민등록증 사진 - 주시현, 010907-*******, 전라남도 나주시 빛가람동 세움트리 아파트, 발급일 2019.8.16. 전라남도 나주시장]\n2대주: 3333251393696 카카오뱅크 ㅈㅅㅎ 입니당\n3대주: 네 입금했습니다\n2대주: 헬퍼 문제 , 다른 계정 피해 생길 시 계정 회수 그리고 제가 3대님을 고소해서 피해배상 받아야합니다 이 점 꼭 참고해주세요\n3대주: 75거래 아니었나요??\n3대주: 아이디팜 거래하면 수수료 5만 이상 나가서\n3대주: 제가 70밖에 없어서 계좌 거래한겁니다 ㅠ\n2대주: 아 혹시 이 부분에서 나중에 여유금 생기실 때 5더 주실 수 있으세요??\n2대주: 수수료는 판매자 부담이에요\n2대주: 전 대화를 75거래라고 생각해서 아예 몰랐네요\n2대주: 어려우시면 입금 다시 해드릴게요\n3대주: 아 알겠습니다 입금 부탁드립니다\n2대주: 넴 계좌번호 주세요\n3대주: 3333-03-6469896 박형빈\n2대주: 아 혹시 아이디팜으로 75만원에 판매를 하면\n3대주: 아이디팜 75거래시면\n2대주: 이렇게 판매하는 개\n3대주: 6십 얼마 받아요\n2대주: 더 이득인거죠??\n2대주: 아 그러면 그냥 판매하는 게 제 입장에선 더 이득인 부분이네요\n3대주: 네\n2대주: 아이디 친창 정리는\n2대주: 혹시 부탁좀 드려도될까요?\n3대주: 네네\n2대주: 아니면 정리ㅜ다 하고 드릴까요?\n2대주: gs389\n2대주: gkqrleh04@@\n2대주: 아이디 비번 입니다\n2대주: 이멜 변경 도와드릴게요 🙇🏻‍♀️\n3대주: 넴 보냈습니다\n2대주: 278053\n2대주: 헬퍼 문제 , 다른 계정 피해 생길 시 계정 회수 그리고 제가 3대님을 고소해서 피해배상 받아야합니다 이 점 꼭 참고해주세요\n2대주: I\n2대주: 이 부분 꼭 잘 알고계셔주세요 .!!\n2대주: 1대주님이 3대케어는 어렵다고 하셔서 연락 주고 받는 것도 제가 대신 할 거고\n2대주: 필요하신 요청사항은 다 말씀해주세용\n2대주: 계정 재 판매 하시게되면 꼭 이야기 해주셔야합니다\n3대주: 네 알겠습니다\n2대주: 멜 변경 잘 되셨죠 .??\n2대주: 계정 잘 사용하세용 🙇🏻‍♀️\n2대주: 수수료 이미 지불 나오고 도우미ㄴ (글자 잘림)\n2대주: 솔랭은 아마 이번 시즌 안 돌리시는 게 그래도 좋을겁니다 .. 엠엠알이 높아서\n3대주: 네네 변경완료입니다 접속만 해볼게여\n2대주: 넴\n3대주: 넵 확인 끝났습니다 감사합니다~\n2대주: 넴 감사합니당\n3대주: 그 혹시\n3대주: 자랭좀 하려하는데 자랭팟 어디서 구해서 하셨나요? 최대한 안겹치게 하려구요\n2대주: 음\n2대주: 자랭은 이미 제가 챌 찍기도하고\n2대주: 제 주변에 롤 하는 사람들 솔챌이든 뭐든 다 알아서\n2대주: 아마 돌리셔도 알거에요\n2대주: 그래서 누가 물어보면 그냥 계정 받았다고 하시는 게 좋긴할거에요\n2대주: 솔자랭 돌리면서 같은 팀원 만나거나 하면\n3대주: 아 네 알겠습니다\n2대주: 그분들이랑 하셔도 좋긴해요\n2대주: 듀오지지는 아마 다 알거에여\n2대주: 넴.!\n2대주: 형빈님 솔랭 돌리시는 건 뭐 자유이긴한데\n2대주: 연락이 너무 많이와가지고\n2대주: 그 욕설이나 채금 먹는 것만 조심해주세요\n3대주: 네네\n2대주: 가능하면 그냥 자랭으로 이번시즌 하시는 게 나을거에유\n2대주: [이미지: 다른 대화 캡쳐 - \"...요새 헬퍼도 하도 많아서 영구정지 먹을까봐 계정 재판매 금지. 제가 3대님 고소해서 보상 받아야합니다...\"]\n2대주: 형빈님 회수절차 밟을 수 밖에 없을 거 같은데 이건\n2대주: 무슨 상황일까요...???\n3대주: 네?\n3대주: 네네 글은 올렸는데 아직 판매되지 않아서 연락 안드렸어요 재판매 완료되면 연락드리리라해서\n2대주: 케어 안되세여 선생님 그러면 제가 1대님이랑 연락해서 케어 해드려야하는 상황이고\n2대주: 4대까지 빠지게 되는데\n3대주: 네?\n3대주: 재판매시 연락만 달라하셨져 그리고 소유권 완전히 넘어왔는데\n2대주: 이러면 1대님이 케어하기가 힘들어지시고\n2대주: 혹시나 잘못판매하셨다가 만약 헬퍼나 명의정지먹게되는거면\n2대주: 3대님이 다 환불조치하셔야해요\n3대주: 거기서부턴 민사 가야져\n2대주: 환불 뿐만 아니라 피해배상 다 고소해서 받아내야하는 부분이에요\n3대주: 재판매 자체는 문제가 없는거같은데요?\n3대주: 저도 고소 많이해봐소\n2대주: 글 먼저 올리시고 파시길래 연락와서 말씀드린거에요\n3대주: 아이디팜 거래 점수 보시면 알겠지만 문제없습니다\n2대주: 형빈님 민증 뒷 자리만 가리고 한 번 보내주세요 .!!\n2대주: 1대주님도 아셔야하는 부분이라\n2대주: 안그러면 재판매 허용 안하실거에요\n3대주: 네?\n3대주: 2대주님의 케어 의무인거죠 이건\n3대주: 환불해주세요 그럼\n2대주: 이미 다 사용하시고 환불 해달라고 하시면 그건 무슨 말이에요 선생님\n2대주: 4대까지 넘어가게되는거면\n2대주: 3대주님이 판매하신거라 의무가 저에게서 3대님이 되는거에요\n2대주: 그러면 3대님이 저한테 연락계속 하셔야하고\n3대주: 소유권이 저에게 넘어왔고\n2대주: 저도 1대님한테 계속 연락 드려야하는 상황이에요\n3대주: 거래 조항에 비활케어 등 케어 조항 들어가있죠?\n2대주: 이것까지 다 말씀해주시고 판매 하셔야해요\n3대주: 이건 2대주님과 1대주님과의 문제지 저와는 무관해요\n2대주: 롤 계정 오래 사용하실 줄 알았는데\n3대주: 그래서 재판매시\n2대주: 그래서 판매해드린건데\n3대주: 2대주님께 연락을 드린다고했는데\n3대주: 거기서 1대주님께서 저에게 간섭하는건 아니죠\n2대주: 뭐 구매하셨으니 판매하는 건 자유시긴하져\n2대주: 길고긴 (글자 잘림)\n2대주: 뭐 구매하셨으니 판매하는 건 자유시긴하져\n3대주: 5할은 나올줄 알았는데\n3대주: 혹시 솔랭 5할 복구정도만..?해주시면 솔랭 안돌리고 판매 안하고 계속 사용할 의향은 있긴해요\n2대주: 저도 롤은 안해서 1대님한테 대리 맡겨보시는 건 어때요\n2대주: 팀장이시긴해여\n3대주: 이건 너무 무례한 부탁이긴하네여\n2대주: 가능하시면 디코에 올린 판매 글만\n2대주: 지워주시면 좋긴해요\n2대주: 정지먹을 수도 있어요\n2대주: 아이디팜에만 올려놔주세여\n3대주: 네? 디코에 안올렸습니다\n2대주: 아 그런가여\n3대주: 재판매 같은경우 최소한 아이디팜\n3대주: 재판매 같은경우 최소한 아이디팜 3인증 완료하신분한테 판매 예정입니다\n2대주: 알겠습니다 일단 판매하시면 저랑 연결해주시고\n2대주: 민증 뒷 자리 정도는 받아주세요\n2대주: 뒷자리래\n2대주: 앞자리정도는받아주세용\n2대주: 사진 .!\n2대주: [이미지: 사법정보시스템 업무 알림 - 수원지방검찰청 안산지청 2024 형제 35309]\n3대주: 현재 고소 5개 진행중 4개 형사/민사 합의 중이라 그쪽은 확실히 걱정안하셔도됩니다\n3대주: 합의 완료*\n2대주: 감사합니당 🙇🏻‍♀️\n3대주: 선생님 아이디 팔렸습니다 010-5330-0756\n2대주: 넴\n2대주: 문자남겨놨어여\n3대주: 넴 mmr 곱창나서 재앙도는 웬만해선 안될꺼에요\n2대주: 구매자분 연락이 없으세여\n3대주: 2일 안에 4대 구매자 연락 없을 시 회수 조치 하겠습니다\n3대주: 네?\n3대주: 근거요?\n2대주: [이미지: 010-5330-0756 번호와의 SMS 대화 캡쳐 - \"안녕하세요 아이디 구매하셨다고 들어서 연락드렸습니다\", \"3대주님한테 이야기는 다 들으셨을까여?\", \"계정 이용 하시면서 문제 발생시 모든 피해배상은 제가 직접 소송해서 피해 보상 받아야하는 문제라 신분증 뒷자리 가리고 받아둘게요 🙇🏻‍♀️\", \"헬퍼, 대리 이용시 계정 회수 될 수 있는 점 양해부탁드립니다\", \"꼭 대리가 필요하시면 1대님 연결해드리겠습니다\"]\n3대주: 혹시\n3대주: 저거 한번에 보냈나요?\n2대주: 그럴거에여 아마\n3대주: ㅋㅋ 저였어도 답변 안하는데 전적 보시면 대리 필요하신분도 아니고\n2대주: 어떻게 답변을 안하나요?? 3대주님이\n2대주: 제가 뒷자리 가리고 사진 받아달라고 요청도 했는데\n3대주: 그럴필요가 없는게\n2대주: 민증 뒷 자리 정도는 받아주세요\n2대주: I\n2대주: 확인점여\n3대주: 아이디팜내 거래여서\n2대주: 네 근데 제가 거래한 게 아니잖아요\n3대주: 제가 걱정히지말라고 했죠\n2대주: 3대님이 총 책임 지시게요??\n2대주: 4대가 헬퍼나 계정 문제 생기면\n2대주: 3대님이 총 책임지고 피해배상 내주셔야해요\n3대주: 받아논다곤 안했습니다\n2대주: 이틀 안에 연락 없으면 회수\n2대주: !!!! (글자 잘림 또는 느낌표)\n2대주: 연락 부재에 대한 계정 회수 알림.\n2대주: 연락 안 오면 계정에 있어 총 책임은 3대주님이 하셔야됩니다.\n2대주: 이틀 뒤 까지 연락 안 오면 1대 주님한테 번호 보내겠습니다\n2대주: 3대님이 계정 파신다고 해서 저는 4대님한테 연락도 못 받고 있는 상황에 책임 없이 행동하시고 이런 거 까지 신경 쓰면서 불편하게 하시네요 상황을\n2대주: [이미지: 디스코드 채팅 캡쳐 2장]\n2대주: 이틀 안에 연락 없으면 회수 하겠습니다\n3대주: 네네 민사걸께요\n2대주: 네\n2대주: 계정에 대한 총 책임은 2대주에 있고 3대주가 4대주에게 계정 양도 또는 판매 시에도 책임은 2대주에게 있어 3대주에게 계정 이용에 대한 신고나 피해배상을 위해 4대 구매자의 주민등록번호 앞자리 사진 촬영 을 필요로 사전에 알려주었다.\n2대주: 이를 무시하고 3대 구매자는 4대 구매자에게 계정을 판매하고 전화번호만 남겨둔 후 06.11 (오전 06:45)이틀동안 연락 두절\n2대주: 4대 구매자는 2대주와 연결되지않음.\n2대주: 06.13 (오전 06:56) 4대 구매자의 연락 부재에 대한 계정 회수 알림.\n2대주: 연락 안 오면 계정에 있어 총 책임은 3대주님이 하셔야됩니다.\n2대주: 이틀 뒤 까지 연락 안 오면 1대 (글자 잘림)\n2대주: 제보톡도 이렇게 오는데 제가 도와드릴 수 있는 게 없어요 4대 주님한테도 그렇고\n2대주: 이틀 드리겠습니다 총 책임 지실 거 아니시면 4대주님 연락 닿게 해주세요 주민등록증 뒷자리 가리고 받아주시구여\n3대주: 알아서하시구요.. 회수 발생 즉시 관련 캡쳐 내용 포함으로 사기죄 성립도 확정이고 전 법적으로 모든 근거기 확실하기때문에 2대주님 불안감?이 회수 타당성을 주장할 순 없습니다\n2대주: 네 이틀 드릴게요",
+      "role": "model",
+      "finishReason": "STOP",
+      "tokenCount": 3608
+    }],
+    "pendingInputs": [{
+      "text": "",
+      "role": "user"
+    }]
+  }
+}

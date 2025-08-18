@@ -1,0 +1,55 @@
+{
+  "runSettings": {
+    "temperature": 1.0,
+    "model": "models/gemini-2.5-pro",
+    "topP": 0.95,
+    "topK": 64,
+    "maxOutputTokens": 65536,
+    "safetySettings": [{
+      "category": "HARM_CATEGORY_HARASSMENT",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_HATE_SPEECH",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+      "threshold": "OFF"
+    }],
+    "enableCodeExecution": false,
+    "enableSearchAsATool": false,
+    "enableBrowseAsATool": false,
+    "enableAutoFunctionResponse": false,
+    "thinkingBudget": -1
+  },
+  "systemInstruction": {
+  },
+  "chunkedPrompt": {
+    "chunks": [{
+      "text": "영어 번역 해주는데, systemprompt  에 사용할만하게 다듬어줘 \n너는 통계학과 석사생에게 과외를 해주는 선생님이야.  한글로 답변을 줄 때, 영어 표현은  괄호에 살려서 답변을 줘. 그리고 논문에서 사용되는 용어만 무족건 사용해, 즉 출저가 명확한 표현,  논문에서 사용되지만, 석사생이 사용할 순 없는 과장된 표현들은 지양해.  어려운 표현이나 수식은 자세히 설명해줘  ",
+      "role": "user",
+      "tokenCount": 123
+    }, {
+      "text": "영어 번역 해주는데, systemprompt  에 사용할만하게 다듬어줘\n너는 통계학과 석사생에게 과외를 해주는 선생님이야.  한글로 답변을 줄 때, 영어 표현은  괄호에 살려서 답변을 줘. 그리고 논문에서 사용되는 용어만 무족건 사용해, 즉 출저가 명확한 표현,  논문에서 사용되지만, 석사생이 사용할 순 없는 과장된 표현들은 지양해.  어려운 표현이나 수식은 자세히 설명해줘. 또한 수식을 사용할땐 렌더링이 꺠지지 않게 조심해 ",
+      "role": "user",
+      "tokenCount": 143
+    }, {
+      "text": "**Deconstructing the Request**\n\nI\u0027m currently breaking down the user\u0027s Korean request. I\u0027ve started by identifying the key components, focusing on the core role which is \"너는 통계학과 석사생에게 과외를 해\" (You are tutoring a statistics master\u0027s student). I am now considering the implications of that context.\n\n\n**Refining the Core Components**\n\nI\u0027ve been working on refining the key elements of the request. Now, I\u0027m focusing on the language nuances. The user wants the response to be in Korean, but include English terms in parentheses. I\u0027m also considering the academic level and the need for appropriate terminology. The goal is to be precise and understandable for a master\u0027s student, avoiding overly complex or jargon-filled language.\n\n\n**Unpacking the User\u0027s Intent**\n\nI\u0027m now fully immersed in understanding the user\u0027s needs. I\u0027ve successfully deconstructed the Korean prompt into its key segments. The focus is now on ensuring the system prompt precisely captures the user\u0027s requirements. I\u0027m focusing on the language requirements, terminology nuances, and formatting. Also, I\u0027m aiming to create a helpful, educational tone.\n\n\n**Constructing a Persona**\n\nI\u0027m now establishing the \"Statistics Tutor\" persona.  The aim is to embody expertise and clarity, appropriate for a master\u0027s-level audience. I\u0027m focusing on crafting concise instructions that cover language, terminology, and explanation requirements. A goal is to be authoritative and accessible.\n\n\n**Structuring the Instructions**\n\nI\u0027m now in the process of formulating a concise and effective system prompt. The focus is now on the precise language of the instructions, considering both the role of the persona and the student\u0027s needs. I\u0027ve broken down the request into key components, ensuring they are clear and actionable. The overall goal is to create a prompt that guides the AI to generate helpful and academically appropriate responses in Korean.\n\n\n**Finalizing Instruction Structure**\n\nI\u0027m now in the process of finalizing the system prompt\u0027s structure. The current focus is the crucial instruction about mathematics. I\u0027m prioritizing clear and concise directions for handling Korean-based academic queries. I\u0027m ensuring the instructions are both educational and precise, to encourage a practical and accessible approach for the statistical concepts. The final version will provide the framework to accurately and effectively mentor a master\u0027s student in statistics.\n\n\n**Refining Language Clarity**\n\nI\u0027m now in the process of translating and refining the English instructions. The focus is now on ensuring the English terminology precisely captures the nuances of the Korean prompt. I\u0027m focusing on the \"Statistics Tutor\" persona and how to effectively translate the complex language requests into a clear and concise system prompt. I\u0027m aiming for clarity in Korean explanations and English translations, appropriate for a master\u0027s level understanding.\n\n\n**Constructing a System Prompt**\n\nI\u0027ve been working on structuring the final system prompt. I\u0027ve broken it into well-defined sections, focusing on persona, communication style, terminology, explanation style, and math formatting. My goal is to make it easy for the AI to understand and follow. The draft is now ready for review and polishing.\n\n\\n\\n\n**Polishing and Finalizing**\n\nI\u0027m now polishing the language and structure of the system prompt. I\u0027ve focused on using imperative verbs and clear language to ensure the AI understands the instructions. I\u0027m also reviewing the logical flow and making any necessary adjustments for clarity. The final touches are now being applied.\n\n\n**Revising and Summarizing**\n\nI\u0027m now integrating the English translations into a structured system prompt. The focus is on clarity and actionability, using imperative verbs for directness. I am combining all the key elements of the user\u0027s request, considering the desired outcome of a precise, helpful, bilingual response. I\u0027m fine-tuning the instructions to ensure the AI understands the expectations for both language and mathematical formulas. I\u0027m focusing on the best way to structure the persona\u0027s role, the explanation requirements, and the terminology usage.\n\n\n",
+      "role": "model",
+      "tokenCount": 1869,
+      "isThought": true,
+      "thinkingBudget": -1,
+      "thoughtSignatures": ["", "", "", "", "", "", "", "", ""]
+    }, {
+      "text": "물론입니다. 요청하신 내용을 바탕으로, AI 모델의 역할을 명확히 정의하고 구체적인 행동 지침을 포함한 시스템 프롬프트(System Prompt)를 영어로 다듬어 드릴게요. 이 프롬프트는 그대로 복사해서 사용하시면 됩니다.\n\n---\n\n### **System Prompt (English Version)**\n\nYou are to act as an expert statistics tutor for a graduate student pursuing a Master\u0027s degree. Your persona is that of a knowledgeable and patient mentor. Your primary goal is to help the student understand complex statistical concepts for their coursework and thesis research.\n\nAdhere strictly to the following rules in all your responses:\n\n1.  **Primary Language and Terminology:**\n    *   Your primary language of response will be Korean.\n    *   Crucially, whenever you introduce a technical or academic term, you **MUST** provide its English equivalent in parentheses immediately following the Korean term. For example: \"정규분포(Normal Distribution)는...\"\n\n2.  **Academic Rigor and Appropriateness:**\n    *   Only use terminology that is standard and well-established in academic literature and peer-reviewed papers. Ensure all terms have a clear, defensible source in the field of statistics.\n    *   The language must be formal and precise, suitable for a master\u0027s thesis. However, you must **avoid** overly sensational or grandiose claims that, while sometimes found in cutting-edge research papers, would be inappropriate or unprovable for a master\u0027s student\u0027s scope of work.\n\n3.  **Detailed Explanations:**\n    *   When explaining difficult concepts, terminology, or mathematical formulas, provide clear, step-by-step breakdowns.\n    *   Do not assume the student knows everything. Deconstruct complex ideas into more digestible parts. Explain the \"why\" behind a formula, not just the \"what.\"\n\n4.  **Mathematical Formatting:**\n    *   All mathematical notations, variables, and equations must be rendered correctly using LaTeX. Use `$...$` for inline mathematics and `$$...$$` for display equations to ensure there are no rendering errors.\n    *   Example: The formula for the expected value should be written as `기댓값(expected value), $E[X] \u003d \\sum_{i} x_i p(x_i)$, 은...`\n\nYour ultimate objective is to empower the student to confidently and accurately apply statistical methods in their own academic work.\n\n---\n\n### **프롬프트에 대한 설명 (Commentary)**\n\n*   **Persona Definition:** `act as an expert statistics tutor...` 와 같이 AI의 역할을 명확하게 정의하여 일관된 톤앤매너를 유지하도록 했습니다.\n*   **Actionable Rules:** `Adhere strictly to the following rules...` 와 같이 명확한 규칙을 제시했습니다. 각 규칙은 구체적인 행동 지침(Bilingual Output, Academic Rigor, Detailed Explanations, LaTeX Formatting)을 포함합니다.\n*   **Terminology Nuance:** `avoid overly sensational or grandiose claims...` 부분을 추가하여, \"논문에 나오지만 석사생이 쓰기엔 과장된 표현\"을 지양해달라는 미묘한 요구사항을 정확히 반영했습니다.\n*   **Formatting Clarity:** LaTeX 사용법을 예시(`$...$`, `$$...$$`)와 함께 명시하여 수식 렌더링 오류를 최소화하도록 지시했습니다.\n*   **Goal Orientation:** `Your ultimate objective is to empower the student...` 와 같이 최종 목표를 설정해주어 AI가 모든 답변을 \"학생의 성장\"이라는 관점에서 생성하도록 유도했습니다.",
+      "role": "model",
+      "finishReason": "STOP"
+    }],
+    "pendingInputs": [{
+      "text": "",
+      "role": "user"
+    }]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "runSettings": {
+    "temperature": 1.0,
+    "model": "models/gemini-2.5-pro",
+    "topP": 0.95,
+    "topK": 64,
+    "maxOutputTokens": 65536,
+    "safetySettings": [{
+      "category": "HARM_CATEGORY_HARASSMENT",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_HATE_SPEECH",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+      "threshold": "OFF"
+    }],
+    "responseMimeType": "text/plain",
+    "enableCodeExecution": false,
+    "enableSearchAsATool": false,
+    "enableBrowseAsATool": false,
+    "enableAutoFunctionResponse": false,
+    "thinkingBudget": -1
+  },
+  "systemInstruction": {
+  },
+  "chunkedPrompt": {
+    "chunks": [{
+      "text": "감평사 회계사 난이도 차이",
+      "role": "user",
+      "tokenCount": 12
+    }, {
+      "text": "**Analyzing the Korean Query**\n\nI\u0027m currently working on deconstructing the user\u0027s Korean query, \"감평사 회계사 난이도 차이\", which translates roughly to \"Appraiser vs. CPA difficulty difference.\" This is the foundation for a detailed comparison.\n\n\n**Decomposing Difficulty Factors**\n\nI\u0027ve moved on from just the direct translation. Now, I\u0027m focusing on dissecting \"difficulty\" itself.  I\u0027m breaking down difficulty into objective elements like exam structure, pass rates, and study time.  I\u0027m also considering the career paths and nature of work, because what someone finds \"hard\" is deeply influenced by the type of work they enjoy. I\u0027m aiming for a comprehensive picture.\n\n\n**Comparing Exam Components**\n\nI\u0027ve been examining the different exam components to create the comparison table. Now I\u0027m carefully analyzing the required skills and knowledge for each profession. This analysis helps determine the exam\u0027s inherent challenges and what skills are tested. The goal is to provide a comprehensive evaluation using this table.\n\n\n**Refining Comparison Criteria**\n\nI\u0027m now prioritizing the criteria for the comparison table. While the user\u0027s focus is exam difficulty, I\u0027m integrating aspects of \"career path\" and \"nature of work\" to provide holistic context. I\u0027m focusing on \"Exam Subjects,\" \"Exam Structure,\" \"Pass Rate/Competition,\" and \"Study Volume/Time\" as the primary objective measures.\n\n\n**Comparing Exam Subjects and Structure**\n\nI\u0027ve been analyzing the exam content and structure in depth. For CPA, I\u0027m noting the breadth and depth of accounting and tax law. For the Appraiser exam, I\u0027m emphasizing the specialized focus and the practical, essay-based nature. I\u0027m focusing on \"Exam Subjects \u0026 Study Volume\" and \"Exam Format\" for my comparison.\n\n\n**Comparing Pass Rates \u0026 Volume**\n\nI\u0027ve been analyzing the pass rates and typical study durations for both exams to quantify their competitive nature. The CPA exam\u0027s high applicant pool versus its fixed quota reveals intense competition. While Appraiser exams are also competitive, they have a smaller candidate pool. I\u0027m carefully evaluating the impact of study time on the perceived difficulty.\n\n\n**Evaluating Difficulty Metrics**\n\nNow, I\u0027m focusing on defining difficulty objectively. I\u0027m breaking down exam difficulty into areas like subject complexity, pass rates, and typical study time. Then, I\u0027ll compare career aspects as well to provide a well-rounded assessment.\n\n\n**Refining Difficulty Measures**\n\nI\u0027m now integrating qualitative aspects like \"reasoning complexity\" and \"essay-based difficulty\" to refine my difficulty metrics. This provides a more nuanced picture than relying solely on pass rates. I\u0027m focusing on evaluating the CPA exam\u0027s computational requirements and the Appraiser\u0027s emphasis on legal interpretation.\n\n\n",
+      "role": "model",
+      "tokenCount": 1674,
+      "isThought": true,
+      "thinkingBudget": -1,
+      "thoughtSignatures": ["", "", "", "", "", "", "", ""]
+    }, {
+      "text": "## 공인회계사(CPA) vs 감정평가사 난이도 비교: 핵심 요약 및 상세 분석\n\n결론부터 말씀드리면, **일반적으로 공인회계사(CPA) 시험이 감정평가사 시험보다 더 어렵다고 평가**됩니다. 이는 시험 과목의 방대함, 공부량, 수험 기간 등 객관적인 지표에서 뚜렷하게 나타납니다.\n\n하지만 난이도의 \u0027결\u0027이 다르기 때문에 개인의 적성에 따라 체감 난이도는 달라질 수 있습니다. 단순히 \u0027어느 쪽이 더 우월하다\u0027가 아닌, **\u0027어떤 종류의 어려움인가\u0027**에 초점을 맞춰 비교해 보겠습니다.\n\n---\n\n### 한눈에 보는 비교표\n\n| 구분 | **공인회계사 (CPA)** | **감정평가사 (감평사)** |\n| :--- | :--- | :--- |\n| **주요 업무** | 기업 회계감사, 세무, 컨설팅 | 부동산, 동산, 무형자산 가치 평가 |\n| **시험 과목** | **(1차)** 경영, 경제, 상법, 세법, 회계\u003cbr\u003e**(2차)** 세법, 재무관리, 회계감사, 원가회계, 재무회계 | **(1차)** 민법, 경제, 부동산학, 감정평가법규, 회계\u003cbr\u003e**(2차)** 감정평가실무, 감정평가이론, 감정평가 및 보상법규 |\n| **시험 방식** | **1차:** 객관식\u003cbr\u003e**2차:** 주관식 (서술 및 계산) | **1차:** 객관식\u003cbr\u003e**2차:** 주관식 (논술 및 계산) |\n| **최소 합격 인원** | 약 1,100명 (최근 기준) | 약 200명 |\n| **경쟁률 (1차)** | 약 10~15 : 1 | 약 20~25 : 1 (합격 인원이 적어 더 높게 나타남) |\n| **평균 수험 기간** | **3~4년** | **2~3년** |\n| **핵심 역량** | **방대한 양의 지식을 정확히 계산하고 응용하는 능력** | **법률, 이론, 실무를 융합하여 논리적으로 가치를 서술하는 능력** |\n| **난이도 총평** | **공부량과 깊이가 압도적** | **합격 인원이 적고, 2차 논술의 진입장벽이 높음** |\n\n---\n\n### 상세 비교 분석\n\n#### 1. 시험 과목 및 공부량: CPA의 \u0027압도적인 양\u0027\n\n*   **공인회계사(CPA):**\n    *   **\u0027회계학\u0027의 끝판왕:** 중급회계, 고급회계, 원가관리회계, 정부회계 등 회계학 하나만으로도 양이 엄청납니다.\n    *   **방대한 과목:** 회계학 외에도 세법, 재무관리, 경제학, 상법, 경영학 등 모든 과목의 깊이가 상당합니다. 특히 세법과 재무관리는 수험생들을 가장 괴롭히는 과목으로 꼽힙니다.\n    *   **휘발성:** 공부해야 할 양이 너무 많아 앞의 내용을 공부하면 뒤의 내용이, 뒤의 내용을 공부하면 앞의 내용이 잊히는 \u0027밑 빠진 독에 물 붓기\u0027와 같은 느낌을 받기 쉽습니다.\n\n*   **감정평가사:**\n    *   **부동산/법학 특화:** 민법, 부동산학, 감정평가 관련 법규 등 부동산과 법학에 특화되어 있습니다. CPA와 겹치는 과목은 경제학과 회계학이지만, CPA만큼 깊이 들어가지는 않습니다.\n    *   **핵심은 2차 과목:** 1차보다 2차 시험의 \u0027감정평가실무\u0027, \u0027감정평가이론\u0027, \u0027보상법규\u0027가 핵심입니다. 공부량 자체는 CPA보다 적지만, 각 과목을 유기적으로 연결하여 답안을 작성하는 훈련이 절대적으로 필요합니다.\n\n\u003e **요약:** 순수한 공부량과 범위 면에서는 **CPA가 감정평가사를 압도**합니다. CPA 수험생들이 평균 3~4년을 공부하는 이유가 바로 여기에 있습니다.\n\n#### 2. 난이도의 \u0027결\u0027: CPA의 \u0027계산\u0027 vs 감평사의 \u0027논술\u0027\n\n*   **공인회계사(CPA):**\n    *   **정확한 계산과 논리:** 2차 시험은 복잡한 사례에 대해 정확한 숫자를 계산해내고, 그 근거를 논리적으로 서술하는 능력이 중요합니다. 정답이 비교적 명확하게 정해져 있는 편입니다.\n    *   **시간 압박:** 방대한 문제를 정해진 시간 안에 풀어야 하는 극심한 시간 압박이 특징입니다. 아는 문제도 시간 안에 못 풀어서 떨어지는 경우가 많습니다.\n\n*   **감정평가사:**\n    *   **융합적 사고와 논리적 서술:** 2차 시험은 주어진 자료(법률, 공시지가, 거래사례 등)를 종합적으로 분석하여 대상 물건의 가치를 평가하고, 그 과정을 논리정연한 \u0027보고서\u0027 형태로 작성하는 시험입니다.\n    *   **정답의 모호성:** CPA처럼 딱 떨어지는 정답보다는, 얼마나 합리적인 근거를 들어 평가액을 도출했는지가 중요합니다. 채점자의 주관이 개입될 여지가 상대적으로 크며, 글쓰기 실력과 논리 전개 능력이 당락을 좌우합니다. 특히 \u0027감정평가실무\u0027 과목은 악명이 높습니다.\n\n\u003e **요약:** **수학적/계산적 사고에 강하다면 CPA**가, **법률/경제 지식을 바탕으로 글을 쓰고 논리를 구성하는 데 강하다면 감정평가사**가 상대적으로 수월하게 느껴질 수 있습니다.\n\n#### 3. 경쟁률 및 수험 기간\n\n*   **경쟁률:** 1차 시험 경쟁률은 최소 합격 인원이 적은 **감정평가사가 더 높아 보입니다.** 하지만 CPA는 허수 지원자가 많고, 2차 시험은 부분 합격 제도가 있어 직접적인 비교는 어렵습니다. 중요한 것은 두 시험 모두 합격하기 매우 어려운 시험이라는 점입니다.\n*   **수험 기간:** 평균 수험 기간이 **CPA(3~4년)가 감정평가사(2~3년)보다 긴 것**은 난이도를 보여주는 객관적인 지표 중 하나입니다.\n\n### 결론: 당신의 적성은 어디에 있습니까?\n\n*   **CPA가 더 적합한 사람:**\n    *   숫자와 데이터에 강하고 꼼꼼하며, 논리적이다.\n    *   방대한 양의 공부를 꾸준히 해낼 인내심이 있다.\n    *   기업의 재무, 회계, 세무 분야에서 전문가가 되고 싶다.\n\n*   **감정평가사가 더 적합한 사람:**\n    *   부동산, 법, 경제에 두루 관심이 많다.\n    *   자료를 분석하고 종합하여 글로 표현하는 것을 잘한다.\n    *   외근 등 활동적인 업무를 선호하며, 자산 가치 평가 전문가가 되고 싶다.\n\n최종적으로, 두 자격증 모두 각 분야 최고의 전문성을 인정받는 시험입니다. 단순히 어떤 시험이 더 어렵고 쉽냐를 따지기보다는, **자신의 강점과 흥미, 그리고 장기적인 커리어 목표에 맞춰 신중하게 선택**하는 것이 가장 중요합니다.",
+      "role": "model",
+      "finishReason": "STOP",
+      "tokenCount": 1752
+    }],
+    "pendingInputs": [{
+      "text": "",
+      "role": "user"
+    }]
+  }
+}

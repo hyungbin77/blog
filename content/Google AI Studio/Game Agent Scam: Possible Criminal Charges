@@ -1,0 +1,51 @@
+{
+  "runSettings": {
+    "temperature": 1.0,
+    "model": "models/gemini-2.5-pro-preview-05-06",
+    "topP": 0.95,
+    "topK": 64,
+    "maxOutputTokens": 65536,
+    "safetySettings": [{
+      "category": "HARM_CATEGORY_HARASSMENT",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_HATE_SPEECH",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+      "threshold": "OFF"
+    }],
+    "responseMimeType": "text/plain",
+    "enableCodeExecution": false,
+    "enableSearchAsATool": false,
+    "enableBrowseAsATool": false,
+    "enableAutoFunctionResponse": false
+  },
+  "systemInstruction": {
+  },
+  "chunkedPrompt": {
+    "chunks": [{
+      "text": "게임 대리를 했는데 먹튀를 당했어 형사 고소가 가능해?",
+      "role": "user",
+      "tokenCount": 18
+    }, {
+      "text": "**Defining the Scam\u0027s Context**\n\nI\u0027m currently focused on the user\u0027s issue: they\u0027re providing a game-boosting service but aren\u0027t being paid. My understanding is solidifying around the \"dine and dash\" problem they\u0027ve encountered, which is the core of this situation. I\u0027m digging deeper into how this context informs the advice I\u0027ll provide.\n\n\n**Examining Fraud Implications**\n\nMy focus is sharpening on the legal nuances. I\u0027m actively assessing if the \"dine and dash\" constitutes criminal fraud. The criteria for fraud are clear: deception, mistaken belief, service provision, and unearned gain. Currently, I\u0027m analyzing if the user\u0027s situation aligns with all these elements for a valid claim.\n\n\n**Investigating Intent \u0026 Evidence**\n\nI\u0027ve advanced my analysis to the crux of the matter: establishing the scammer\u0027s *intent* to defraud. I\u0027m focusing on the evidence needed to prove this. Screenshots of blocked communications, fake identities, and other indicators of deceit are crucial now. I\u0027m also considering the practical challenges, like small sums involved and anonymous perpetrators. The user\u0027s evidence must clearly paint a picture of deliberate deception for a solid case.\n\n\n**Refining Legal Strategies**\n\nI\u0027m now fully immersed in the practical legal avenues. While a criminal complaint for fraud seems viable, I\u0027m also assessing a civil suit for damages. The focus is to build a robust case that supports both options, aiming to maximize the user\u0027s chances of compensation.\n\n\n**Clarifying Legal Pathways**\n\nI\u0027m now fully immersed in the practical legal avenues. While a criminal complaint for fraud seems viable, I\u0027m also assessing a civil suit for damages. The focus is to build a robust case that supports both options, aiming to maximize the user\u0027s chances of compensation.\n\n\n**Assessing User\u0027s Reporting Strategy**\n\nI\u0027m now focusing on how the user should approach the legal authorities. I\u0027m exploring the nuances of reporting to the police versus pursuing a civil suit, weighing the pros and cons of each approach. The primary goal is to maximize the user\u0027s chances of recovering their money. The need to provide clear evidence is paramount in both scenarios.\n\n\n",
+      "role": "model",
+      "tokenCount": 1306,
+      "isThought": true,
+      "thoughtSignatures": ["", "", "", "", "", ""]
+    }, {
+      "text": "네, 게임 대리 먹튀는 사기죄에 해당할 수 있어 형사 고소가 가능합니다.\n\n**형사 고소가 가능한 이유 (사기죄 성립 요건):**\n\n1.  **기망행위:** 상대방이 처음부터 대금을 지불할 의사나 능력 없이 약속하고, 질문자님을 속여 게임 대리 용역을 제공하게 한 경우.\n2.  **착오:** 질문자님은 상대방이 당연히 대금을 지불할 것이라고 믿고 용역을 제공한 경우.\n3.  **처분행위:** 질문자님이 착오에 빠져 게임 대리라는 재산상 이익(용역)을 상대방에게 제공한 경우.\n4.  **재산상 이익 취득 및 손해 발생:** 상대방은 대금 지불 없이 용역을 제공받아 이익을 얻었고, 질문자님은 받아야 할 돈을 받지 못해 손해가 발생한 경우.\n5.  **고의성:** 상대방에게 위와 같은 편취의 고의가 있었음이 인정될 경우.\n\n**고소 진행 시 준비해야 할 증거 자료:**\n\n*   **약속 내용:** 대리 비용, 작업 범위, 기간 등을 합의한 대화 내용 (카카오톡, 디스코드, 게임 내 채팅 등 스크린샷)\n*   **작업 완료 증거:** 대리 작업을 완료했음을 보여주는 스크린샷 (계정 상태 변화, 랭크 상승 등)\n*   **상대방 정보:** 상대방의 계정 정보, 아이디, 연락처 (알고 있는 선에서 최대한 확보)\n*   **대금 미지급 증거:** 대금 지급을 요청했으나 답변이 없거나 거부하는 대화 내용, 차단된 화면 등\n*   **기타 증거:** 상대방이 처음부터 지불 의사가 없었다고 추정할 만한 정황 (예: 작업 완료 후 바로 잠적, 다른 사람에게도 비슷한 사기를 친 정황 등)\n\n**고소 절차:**\n\n1.  **증거 자료 수집 및 정리:** 위에서 언급된 자료들을 최대한 모으고 시간 순서대로 정리합니다.\n2.  **고소장 작성:** 경찰서 민원실에 비치된 양식이나 인터넷에서 다운로드하여 육하원칙에 따라 피해 사실을 구체적으로 작성합니다. (어려우면 경찰서 방문 시 도움을 받을 수 있습니다.)\n3.  **경찰서 방문 및 제출:** 관할 경찰서(보통 피고소인의 주소지 또는 범죄 발생지, 사이버 범죄의 경우 신고인 주소지 관할도 가능)에 방문하여 고소장과 증거 자료를 제출합니다.\n    *   사이버수사팀이 있는 곳으로 가시는 것이 좋습니다. 온라인으로도 `사이버범죄 신고시스템(ECRM)`을 통해 신고할 수 있지만, 직접 방문하는 것이 더 빠르고 확실할 수 있습니다.\n4.  **고소인 진술:** 고소장이 접수되면 담당 수사관이 배정되고, 고소인 조사를 받게 됩니다. 이때 준비한 증거 자료를 바탕으로 피해 사실을 상세히 진술합니다.\n\n**주의사항 및 참고사항:**\n\n*   **소액이라도 고소 가능:** 피해 금액이 적더라도 사기죄는 성립할 수 있습니다. 다만, 경찰 수사력 배분에 있어 후순위로 밀릴 가능성은 있습니다.\n*   **상대방 특정의 어려움:** 익명성이 높은 온라인 거래의 특성상 상대방을 특정하기 어려울 수 있습니다. 하지만 경찰은 IP 추적 등 수사 기법을 통해 가해자를 찾아낼 수 있습니다.\n*   **게임 약관 위반 문제:** 게임 대리 자체가 해당 게임의 운영 약관에 위배될 수 있습니다. 이 경우, 질문자님의 계정에도 불이익(정지 등)이 있을 수 있다는 점은 감안하셔야 합니다. 하지만 이는 게임사와의 문제이지, 사기죄 성립과는 별개입니다. 사기꾼이 이를 빌미로 협박하더라도 당당하게 대처하세요.\n*   **시간과 노력:** 형사 고소는 시간이 오래 걸리고 정신적으로 힘들 수 있습니다.\n\n**결론적으로,** 증거만 충분하다면 게임 대리 먹튀도 사기죄로 형사 고소가 가능합니다. 우선 증거자료를 잘 확보하시고, 가능하다면 법률 전문가(변호사)와 간단히 상담해보시는 것도 좋습니다. 힘들겠지만 꼭 잘 해결되시길 바랍니다.",
+      "role": "model",
+      "finishReason": "STOP",
+      "tokenCount": 1001
+    }],
+    "pendingInputs": [{
+      "text": "",
+      "role": "user"
+    }]
+  }
+}
