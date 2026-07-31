@@ -1,3 +1,10 @@
+---
+title: LoRA
+tags:
+  - paper-review
+  - llm
+  - nlp
+---
 
 Fully Fine-Tuning이 힘든 이유 
 - LLM의 weight은 최소 1.5 ~ 3B

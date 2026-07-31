@@ -1,3 +1,11 @@
+---
+title: DBSCAN
+tags:
+  - machine-learning
+  - clustering
+  - anomaly-detection
+---
+
 ## Density-based clustering
 - Conduct a clustering by considering the density of data points
 	- Can find an arbitrary shape of cluster

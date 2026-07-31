@@ -1,3 +1,11 @@
+---
+title: clustering & anomaly detection
+tags:
+  - machine-learning
+  - clustering
+  - anomaly-detection
+---
+
 [[DBSCAN]]
 
 [[LOF(Local Outlier Factor)]]

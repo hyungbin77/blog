@@ -1,3 +1,11 @@
+---
+title: Stanford NLP with Deep Learning
+tags:
+  - nlp
+  - deep-learning
+  - lecture-note
+---
+
 ## Lecture 1 : Introduction and Word Vectors
 
 ### Human language and word meaning 

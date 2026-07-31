@@ -1,3 +1,9 @@
+---
+title: Question
+tags:
+  - statistics
+---
+
 ### 1 연습문제
 
 3번

@@ -1,3 +1,8 @@
+---
+title: all tips
+tags:
+  - tips
+---
 
 ## code block
 <div style="page-break-after: always"></div>

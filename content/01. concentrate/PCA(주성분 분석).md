@@ -1,3 +1,10 @@
+---
+title: PCA(주성분 분석)
+tags:
+  - machine-learning
+  - dimensionality-reduction
+  - statistics
+---
 
 # 9-1
 ## 9-1-1 주성분 분석 소개 1

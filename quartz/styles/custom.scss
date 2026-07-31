@@ -34,3 +34,105 @@
 }
 // put your custom CSS here!
 
+// ─────────────────────────────────────────────
+// 홈(랜딩) 페이지 — frontmatter의 `cssclasses: [home]` 로 적용
+// 콜아웃을 카드 그리드로 배치한다
+// ─────────────────────────────────────────────
+// 홈에서는 브레드크럼 / 읽는 시간 / 자동 생성 태그 줄을 숨긴다
+// (태그는 본문의 "태그로 둘러보기" 섹션에서 안내)
+body[data-slug="index"] {
+  .breadcrumb-container,
+  .content-meta,
+  div.popover-hint > ul.tags,
+  .article-title {
+    // 헤더의 사이트 제목과 중복되므로 홈에서는 숨김
+    display: none;
+  }
+}
+
+article.home {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 1rem;
+
+  // 카드가 아닌 요소(제목, 문단, 표 등)는 한 줄 전체를 차지
+  & > *:not(.callout) {
+    grid-column: 1 / -1;
+  }
+
+  // 인트로 문단
+  & > p:first-of-type {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: var(--darkgray);
+    margin: 0.5rem 0 0;
+  }
+
+  & > p:nth-of-type(2) {
+    margin-top: 0.5rem;
+    color: var(--gray);
+    font-size: 0.95rem;
+  }
+
+  & > h2 {
+    margin: 1.75rem 0 0.25rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--lightgray);
+    font-size: 1.3rem;
+  }
+
+  // 카드
+  & > .callout {
+    margin: 0;
+    height: 100%;
+    padding: 0.4rem 1rem 0.6rem;
+    transition:
+      transform 0.15s ease,
+      box-shadow 0.15s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
+    }
+
+    // 제목에 이미 이모지를 쓰므로 콜아웃 기본 아이콘은 숨김
+    .callout-icon,
+    .fold-callout-icon {
+      display: none;
+    }
+
+    .callout-title {
+      padding: 0.6rem 0 0.2rem;
+      gap: 0;
+    }
+
+    .callout-title-inner {
+      font-size: 1rem;
+    }
+
+    ul {
+      padding-left: 1.1rem;
+      margin: 0.4rem 0 0;
+    }
+
+    li {
+      margin: 0.35rem 0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    a {
+      font-weight: 600;
+    }
+  }
+
+  // 태그 목록
+  & > p > a.tag-link {
+    display: inline-block;
+    margin: 0.15rem 0.25rem 0.15rem 0;
+  }
+
+  table {
+    margin-top: 0.5rem;
+  }
+}

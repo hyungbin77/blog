@@ -1,3 +1,9 @@
+---
+title: mid_test
+tags:
+  - deep-learning
+---
+
 ## 1. 
 입력 계층 2개($x_1$, $x_2$), 은닉 계층 2개, 출력 계층
 은닉 계층 = NAND , OR
