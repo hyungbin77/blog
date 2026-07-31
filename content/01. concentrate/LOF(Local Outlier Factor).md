@@ -1,3 +1,9 @@
+---
+title: LOF(Local Outlier Factor)
+tags:
+  - anomaly-detection
+  - machine-learning
+---
 
 이상치 스코어를 산출할 때, 주변부 데이터의 밀도를 고려 
 

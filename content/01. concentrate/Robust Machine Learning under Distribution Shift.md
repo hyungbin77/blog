@@ -1,3 +1,11 @@
+---
+title: Robust Machine Learning under Distribution Shift
+tags:
+  - paper-review
+  - machine-learning
+  - distribution-shift
+---
+
 #### Distribution shift 
 - 학습 데이터와 테스트 시점의 데이터 분포가 달라지는 현상
 - 현실 세계에서는 데이터가 시간이 지남에 따라 변하거나(change over time), 다른 도메인에서 올 수 있으므로(different domains) 성능 및 안정성이 저하될 수 있음

@@ -1,3 +1,9 @@
+---
+title: Spatial and Spatio-temporal Epidemiology
+tags:
+  - statistics
+  - bayesian
+---
 
 ### 알고리즘 소개 
 

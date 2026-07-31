@@ -1,4 +1,9 @@
-
+---
+title: Causal Inference in Linear Systems
+tags:
+  - causal-inference
+  - statistics
+---
 
 causal inference는 모델을 구성하는 방정식의 유형에 관계없이 적용 가능.
 즉, 변수 간의 관계가 선형이든 비선형이든 상관없이 인과관계 분석 

@@ -1,3 +1,12 @@
+---
+title: Deep_code
+tags:
+  - time-series
+  - anomaly-detection
+  - deep-learning
+  - code
+---
+
 class DeepAnt(nn.Module):
     def __init__(self, seq_len=12, out_dim=1):
         super().__init__()

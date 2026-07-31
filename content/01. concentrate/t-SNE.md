@@ -1,3 +1,9 @@
+---
+title: t-SNE
+tags:
+  - machine-learning
+  - dimensionality-reduction
+---
 
 - 비슷한것은 가깝게 다른것은 멀게 가능한한 평면상에 눌러 배치하려면
 	- 얼마 비슷하고/가깝고  다른지/먼지 유사도(similarity)의 정의가 필요

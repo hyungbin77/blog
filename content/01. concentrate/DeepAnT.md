@@ -1,3 +1,12 @@
+---
+title: DeepAnT
+tags:
+  - paper-review
+  - time-series
+  - anomaly-detection
+  - deep-learning
+---
+
 # DeepAnT : Unsupervised Anomaly Detection
 
 ## ABSTRACT

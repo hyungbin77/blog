@@ -1,3 +1,10 @@
+---
+title: Distribution Shift
+tags:
+  - machine-learning
+  - distribution-shift
+---
+
 Distribution Shift 
  ->  학습 데이터와 테스트 시점의 데이터 분포가 달라지는 현상
 

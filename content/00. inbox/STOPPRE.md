@@ -1,3 +1,11 @@
+---
+title: STOPPRE
+tags:
+  - paper-review
+  - nlp
+  - llm
+---
+
 - Roberta -  더 많이 학습, betch 사이즈가 큼 
 -  NLP classification 관련 4개의 domain, 8개의 task에서 Domain- and Task-adaptive pretraining에 대한 철저한 분석을 진행함
 - Domain 및 Task 전반에 걸쳐 adapted language model의 tranferability 에 대한 연구 수행

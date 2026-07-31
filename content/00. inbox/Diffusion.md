@@ -1,3 +1,10 @@
+---
+title: Diffusion
+tags:
+  - deep-learning
+  - generative-model
+---
+
 ### 큰그림
 
 프로세스 확장  차원은 상관없지만 1차원에서 확장한다
